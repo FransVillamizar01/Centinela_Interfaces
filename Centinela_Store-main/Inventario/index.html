@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <style>
+
+.buscador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.buscador input[type="text"] {
+        width: 200%;
+        text-align: center;
+}
+
+.buttonz {
+    margin-left: 35px;
+}
+
+.busca {
+    margin-left: 20px;
+}
+
+#resultados {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#resultados td, #resultados th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+        #resultados th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            background-color: #585858;
+            color: white;
+        }
+        #resultados td, #resultados th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center; 
+        }
+    </style>
+    
+    <div class="buscador-container">
+        <div class="buscador">
+            <form method="post">
+                <div class="busca">
+                    <input type="text" name="nombre" value="" required placeholder="Ingrese el nombre del producto que desee buscar">
+                </div>
+                
+                <div class="buttonz">
+                    <input type="button" value="Buscar">
+                </div>
+                
+            </form>
+
+        </div>
+    </div>
+    
+    <table id="resultados">
+        <tr>
+            <th>Producto</th>
+            <th>Disponibilidad</th>
+            <th>Cantidad en stock</th>
+            <th>Cantidad por adquirir</th>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+    </table>
+
+    
+
+</body>
+</html>
